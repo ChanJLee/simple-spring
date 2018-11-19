@@ -20,8 +20,7 @@ public class MyApplication {
                 .route(p -> p
                         .path("/get")
                         .filters(f -> f.addRequestHeader("Hello", "World"))
-                        .uri("http://httpbin.org:80"))
-
+                        .uri("http://httpbin.org:80")
                 .build();
     }
 }
