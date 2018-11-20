@@ -15,12 +15,11 @@ public class MyApplication {
 
     @Bean
     public RouteLocator myRoutes(RouteLocatorBuilder builder) {
-        return builder
-                .routes()
+        return builder.routes()
                 .route(p -> p
                         .path("/get")
                         .filters(f -> f.addRequestHeader("Hello", "World"))
-                        .uri("http://httpbin.org:80")
+                        .uri("http://www.baidu.com"))
                 .build();
     }
 }
